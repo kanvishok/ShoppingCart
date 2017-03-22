@@ -1,0 +1,14 @@
+﻿<div class="row" style="margin-bottom:15px"  ng-if="basket.Items.length>0">
+    <div class="col-xs-12">
+        <div class="btn-group pull-right" role="group" aria-label="..." style="margin-top:10px;">
+            <button type="button" class="btn btn-default btn-success" ng-click="proceedToCheckOut()"><span class="fa fa-shopping-cart"></span>&nbsp; Proceed To Checkout({{basket.Items.length}})</button>
+        </div>
+    </div>
+</div>
+<div class="row" id="products">
+    <div>
+        <ul>
+            <li ng-repeat="product in products" product-selector></li>
+        </ul>
+    </div>
+</div>

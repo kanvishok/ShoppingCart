@@ -1,0 +1,21 @@
+﻿
+<div class="row">
+    <div class="col-md-12">
+        <div class="btn-group pull-right" role="group" aria-label="..." style="margin-top:10px;">
+            <button type="button" class="btn btn-default btn-info" ng-click="backToProducts()"><span class="fa fa-arrow-left"></span>&nbsp;Back to Products</button>
+            <button type="button" class="btn btn-default btn-success" ng-click="checkout()"><span class="fa fa-shopping-cart"></span>&nbsp;Checkout</button>
+        </div>
+    </div>
+</div><br /><br />
+<div class="row">
+    <div class="col-md-10 text-center"><label >Product and Description</label></div>
+    <div class="col-md-1"><label>Quanity:</label></div>
+    <div class="col-md-1"><label>Price:</label></div>
+</div>
+<div class="row" id="items">
+    <div class="col-md-12">
+        <ul>
+            <li ng-repeat="item in basket.Items" items-in-basket></li>
+        </ul>
+    </div>
+</div>

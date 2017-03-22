@@ -1,0 +1,4 @@
+﻿namespace ShoppingCart.Query.Models
+{
+   
+}

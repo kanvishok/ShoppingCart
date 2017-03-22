@@ -1,0 +1,16 @@
+﻿<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row"><label>Name:</label>{{product.Name}}</div>
+        <div class="row"><label>Description:</label>{{product.Description}}</div>
+        <div class="row"><label>Price:</label>{{product.Price}}</div>
+        <div class="row"><label>Available Quanity:</label>{{product.Stocks[0].EstimatedStock}}</div>
+    </div>
+    <div class="panel-footer">
+        <div  >
+            <input type="text"  ng-model='quantity' id="{{product.Name}}Quantity">
+            <button type="button" class="btn-primary" ng-click="addToBasket()" class="btn btn-primary">Add to Basket</button>
+            <button type="button" class="btn-primary" ng-click="editBasketQuantity()" class="btn btn-primary">Edit Basket Quantity</button>
+        </div>
+    </div>
+
+</div>
